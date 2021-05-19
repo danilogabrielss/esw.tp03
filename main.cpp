@@ -72,7 +72,7 @@ public :
 		this -> email = "";
 		this -> nome = "";
 		this -> telefone = "";
-		
+
 	}
 
 	string getEmail()
@@ -100,10 +100,18 @@ public :
 		this ->telefone = telefone;
 	}
 
-	/*int idadde()
+	void coletar_idade()
 	{
-		return(	getAno - 2021);
-	}*/
+		cout << "Digite seu nome: ";
+		cin >> setNome();
+		cout << endl;
+		cout << "Digite seu email: ";
+		cin >> setEmail();
+		cout << endl;
+		cout << "Digite seu telefone: ";
+		setTelefone() >> cin;
+		cout << endl;
+	}
 
 };
 int main(int argc, char** argv)
@@ -113,9 +121,7 @@ int main(int argc, char** argv)
 
 	for(int i = 0; i < 5; ++i)
 	{
-		cout << "Digite seu nome: ";
-		cin >> ctt[i]->setNome();
-		datas[i] = new Data(i + 1, 5, 2021);
+		
 	}
 	for(int i = 0; i < 5; ++i)
 	{
